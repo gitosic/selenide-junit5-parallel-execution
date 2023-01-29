@@ -45,7 +45,7 @@ public class RunnerTest {
     void assertNotNullTest() {
         System.err.println("Test - assertNotNull");
         String text = "bla-bla-bla";
-        assertNotNull(text,"It must not be null");
+        assertNotNull(text, "It must not be null");
     }
 
     @BeforeEach
