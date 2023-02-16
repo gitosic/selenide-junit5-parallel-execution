@@ -1,7 +1,9 @@
 package org.example.pages;
 
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
+import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class TestPages {
@@ -14,6 +16,14 @@ public class TestPages {
     // page_url = https://market.yandex.ru
     public static SelenideElement thingsOnPage() {
         return $x("//div//span[text()='Одеяло buyson BuyRelax всесезонное, 140 х 205 см, белый']");
+    }
+
+    public static ElementsCollection dataInTableCountOfRows() {
+        return $$x("//div//div");
+    }
+
+    public static ElementsCollection dataInTableCountOfColumns(int row) {
+        return $$x("//div//div");
     }
 
 }
