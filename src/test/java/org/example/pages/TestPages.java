@@ -15,7 +15,7 @@ public class TestPages {
 
     // page_url = https://market.yandex.ru
     public static SelenideElement thingsOnPage() {
-        return $x("//div//span[text()='Одеяло buyson BuyRelax всесезонное, 140 х 205 см, белый']");
+        return $x("//div//span[text()='В корзину']");
     }
 
     public static ElementsCollection dataInTableCountOfRows() {

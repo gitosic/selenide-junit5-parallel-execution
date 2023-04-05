@@ -96,6 +96,7 @@ public class ChromiumHelper {
             options.addArguments("--window-size=1920, 1080");
         } else {
             options.addArguments("--start-maximized");
+            options.addArguments("--remote-allow-origins=*");
         }
         // options.setExperimentalOption("w3c", true);
         var logPrefs = new LoggingPreferences();

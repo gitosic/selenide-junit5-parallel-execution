@@ -1,17 +1,19 @@
 package org.example;
 
 import io.cucumber.spring.CucumberContextConfiguration;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.platform.suite.api.*;
 import org.springframework.test.context.ContextConfiguration;
 
 import static io.cucumber.junit.platform.engine.Constants.*;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @Suite
 @IncludeEngines("cucumber")
 @SelectClasspathResources(value = {
-        @SelectClasspathResource("parallel.feature"),
+        @SelectClasspathResource("sometests.feature"),
         @SelectClasspathResource("scroll.feature")
 })
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "org.example.stepdefinitions")
@@ -20,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @ConfigurationParameter(key = "cucumber.execution.parallel.mode.default", value = "same_thread")
 @ConfigurationParameter(key = "cucumber.execution.parallel.mode.classes.default", value = "same_thread")
 @ConfigurationParameter(key = "cucumber.execution.parallel.config.strategy", value = "custom")
-@ConfigurationParameter(key = "cucumber.execution.parallel.config.custom.parallelism", value = "4")
+@ConfigurationParameter(key = "cucumber.execution.parallel.config.custom.parallelism", value = "1")
 @ConfigurationParameter(key = "cucumber.execution.parallel.config.custom.class",
         value = "org.example.CustomStrategy")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME,
@@ -33,19 +35,6 @@ public class RunnerTest {
 
     @BeforeAll
     public static void setupWebdriver() {
-    }
-
-    @Test
-    void testCucumber() {
-        System.err.println("testCucumber");
-        Assertions.assertEquals(1, 1);
-    }
-
-    @Test
-    void assertNotNullTest() {
-        System.err.println("Test - assertNotNull");
-        String text = "bla-bla-bla";
-        assertNotNull(text, "It must not be null");
     }
 
     @BeforeEach

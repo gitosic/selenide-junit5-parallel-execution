@@ -1,52 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="22.783">
-    <testcase classname="Checking multiple windows" name="Open yandex - case 1" time="4.247">
-        <system-out>
-            <![CDATA[When open app ui - Yandex...................................................passed
-And wait 100 milliseconds...................................................passed
-Then you will see "Yandex 1"................................................passed
-And wait 100 milliseconds...................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Checking multiple windows" name="Open google - case 2" time="2.343">
-        <system-out>
-            <![CDATA[When open app ui - Google...................................................passed
-And wait 100 milliseconds...................................................passed
-Then you will see "Google 2"................................................passed
-And wait 100 milliseconds...................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Checking multiple windows" name="Open yandex - case 3" time="1.201">
-        <system-out>
-            <![CDATA[When open app ui - Yandex...................................................passed
-And wait 100 milliseconds...................................................passed
-Then you will see "Yandex 3"................................................passed
-And wait 100 milliseconds...................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Checking multiple windows" name="Open google - case 4" time="4.244">
-        <system-out>
-            <![CDATA[When open app ui - Google...................................................passed
-And wait 100 milliseconds...................................................passed
-Then you will see "Google 4"................................................passed
-And wait 100 milliseconds...................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Scroll test" name="Scroll down - https://habr.com/ru/all" time="6.104">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="51.798">
+    <testcase classname="Scroll test" name="Scroll down - https://habr.com/ru/all" time="14.025">
         <system-out>
             <![CDATA[When open 'https://habr.com/ru/all/'........................................passed
 And scroll down.............................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Scroll test" name="Scroll right - https://market.yandex.ru" time="22.15">
+    <testcase classname="Scroll test" name="Scroll right - https://market.yandex.ru" time="21.522">
         <system-out>
             <![CDATA[When open 'https://market.yandex.ru/'.......................................passed
 And scroll right............................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Demo BDD" name="Habr habr" time="4.074">
+        <system-out>
+            <![CDATA[When open 'https://habr.com/ru/all/'........................................passed
+And click on the link "Разработка"..........................................passed
+And click on the link "Администрирование"...................................passed
+Then header contains text 'КАК СТАТЬ АВТОРОМ'...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Demo BDD" name="Habr habr 2" time="4.466">
+        <system-out>
+            <![CDATA[When open 'https://habr.com/ru/all/'........................................passed
+And click on the link "Дизайн"..............................................passed
+And click on the link "Менеджмент"..........................................passed
+Then header contains text 'КАК СТАТЬ АВТОРОМ'...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Demo BDD" name="Habr habr 3" time="7.128">
+        <system-out>
+            <![CDATA[When open 'https://habr.com/ru/all/'........................................passed
+And click on the link "Маркетинг"...........................................passed
+Then header contains text 'КАК СТАТЬ АВТОРОМ'...............................passed
 ]]>
         </system-out>
     </testcase>
