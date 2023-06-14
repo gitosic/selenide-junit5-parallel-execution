@@ -2,6 +2,7 @@ package api;
 
 import api.helpers.Specifications;
 import api.requestsAndResponses.*;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.time.Clock;
@@ -11,15 +12,15 @@ import java.util.stream.Collectors;
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.*;
 
+@Tag("allresttests")
 public class Junit5Tests {
-    private final static String URL = "https://reqres.in/";
-
     /**
      * Test #1
      * 1. Using the service https://reqres.in/ get a list of users from the second page
      * 2. Make sure the users and avatars names match
      * 3. Make sure the user's email ends with reqres.in
      */
+    @Tag("firstresttest")
     @Test
     public void checkAvatarAndIdTest() {
 //        Through the specification we check "ContentType.JSON" and "expectStatusCode(200)"
@@ -41,6 +42,8 @@ public class Junit5Tests {
             assertTrue(avatars.get(i).contains(ids.get(i)));
         }
     }
+
+    private final static String URL = "https://reqres.in/";
 
     /**
      * Test #2

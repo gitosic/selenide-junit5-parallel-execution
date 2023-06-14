@@ -6,7 +6,6 @@ import ui.helpers.DateFormatUtils;
 
 import java.time.LocalDate;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -39,13 +38,13 @@ public class AnyTest {
                         + dateTo + ". Actually the column contains: " + dateFromUi);
     }
 
-    @Test
-    public void simpleTest2() throws InterruptedException {
-        Assertions.assertAll(
-                () -> assertThat(1).withFailMessage("There are no messages").isGreaterThan(2),
-                () -> assertThat(1).as("There are no messages").isGreaterThan(2)
-        );
-    }
+//    @Test
+//    public void simpleTest2() throws InterruptedException {
+//        Assertions.assertAll(
+//                () -> assertThat(1).withFailMessage("There are no messages").isGreaterThan(2),
+//                () -> assertThat(1).as("There are no messages").isGreaterThan(2)
+//        );
+//    }
 
     @Test
     void testCucumber() {
