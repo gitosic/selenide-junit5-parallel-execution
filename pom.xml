@@ -12,13 +12,15 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jackson.modules>2.11.0</jackson.modules>
+        <jackson.modules>2.14.2</jackson.modules>
         <surefire.version>3.0.0-M8</surefire.version>
         <junit5.version>5.9.2</junit5.version>
         <cucumber.version>7.10.1</cucumber.version>
         <selenide.version>6.11.0</selenide.version>
         <selenium.version>4.7.2</selenium.version>
         <guava.version>31.1-jre</guava.version>
+        <rest-assured.version>4.4.0</rest-assured.version>
+        <rest-assured.schema-validator.version>4.4.0</rest-assured.schema-validator.version>
     </properties>
 
 
@@ -155,6 +157,21 @@
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${rest-assured.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>${rest-assured.schema-validator.version}</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>

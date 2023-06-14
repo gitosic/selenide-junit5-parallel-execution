@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="51.798">
-    <testcase classname="Scroll test" name="Scroll down - https://habr.com/ru/all" time="14.025">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="9.79">
+    <testcase classname="Scroll test" name="Scroll down - https://habr.com/ru/all" time="2.657">
         <system-out>
             <![CDATA[When open 'https://habr.com/ru/all/'........................................passed
 And scroll down.............................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Scroll test" name="Scroll right - https://market.yandex.ru" time="21.522">
+    <testcase classname="Scroll test" name="Scroll right - https://market.yandex.ru" time="3.574">
         <system-out>
             <![CDATA[When open 'https://market.yandex.ru/'.......................................passed
 And scroll right............................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Demo BDD" name="Habr habr" time="4.074">
+    <testcase classname="Demo BDD" name="Habr habr" time="2.268">
         <system-out>
             <![CDATA[When open 'https://habr.com/ru/all/'........................................passed
 And click on the link "Разработка"..........................................passed
@@ -23,7 +23,7 @@ Then header contains text 'КАК СТАТЬ АВТОРОМ'....................
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Demo BDD" name="Habr habr 2" time="4.466">
+    <testcase classname="Demo BDD" name="Habr habr 2" time="1.681">
         <system-out>
             <![CDATA[When open 'https://habr.com/ru/all/'........................................passed
 And click on the link "Дизайн"..............................................passed
@@ -32,7 +32,7 @@ Then header contains text 'КАК СТАТЬ АВТОРОМ'....................
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Demo BDD" name="Habr habr 3" time="7.128">
+    <testcase classname="Demo BDD" name="Habr habr 3" time="7.45">
         <system-out>
             <![CDATA[When open 'https://habr.com/ru/all/'........................................passed
 And click on the link "Маркетинг"...........................................passed
