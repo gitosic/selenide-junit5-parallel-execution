@@ -1,4 +1,4 @@
-package ui;
+package api;
 
 import io.cucumber.spring.CucumberContextConfiguration;
 import org.junit.jupiter.api.AfterEach;
@@ -13,10 +13,10 @@ import static io.cucumber.junit.platform.engine.Constants.*;
 @Suite
 @IncludeEngines("cucumber")
 @SelectClasspathResources(value = {
-        @SelectClasspathResource("sometests.feature"),
-        @SelectClasspathResource("scroll.feature")
+        @SelectClasspathResource("apitests.feature"),
+        @SelectClasspathResource("sometests123.feature"),
 })
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "ui.stepdefinitions")
+@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "api.stepdefinitions")
 @ConfigurationParameter(key = JUNIT_PLATFORM_NAMING_STRATEGY_PROPERTY_NAME, value = "long")
 @ConfigurationParameter(key = "cucumber.execution.parallel.enabled", value = "true")
 @ConfigurationParameter(key = "cucumber.execution.parallel.mode.default", value = "same_thread")

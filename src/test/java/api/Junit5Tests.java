@@ -17,11 +17,11 @@ public class Junit5Tests {
     /**
      * Test #1
      * 1. Using the service https://reqres.in/ get a list of users from the second page
-     * 2. Make sure the user's filenames match
+     * 2. Make sure the users and avatars names match
      * 3. Make sure the user's email ends with reqres.in
      */
     @Test
-    public void checkAvatarAndIdTest1() {
+    public void checkAvatarAndIdTest() {
 //        Through the specification we check "ContentType.JSON" and "expectStatusCode(200)"
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpecOK200());
         List<UserData> users = given()
